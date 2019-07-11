@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('..//fonts/Lato-Bold.woff2') format('woff2'),
+        url('..//fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('..//fonts/Lato-Regular.woff2') format('woff2'),
+        url('..//fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('..//fonts/Lato-Light.woff2') format('woff2'),
+        url('..//fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('..//fonts/Lato-Italic.woff2') format('woff2'),
+        url('..//fonts/Lato-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font: 14px 'Lato', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    height: 95px;
+    margin: 0 auto;
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    display: block; /* убирает отступ внизу картинки */
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #444;
+}
+
+.logo-bold {
+    font: bold 20px 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 13px;
+}
+
+.logo-regular {
+    font: 14px 'Lato', sans-serif;
+    margin: 0;
+    padding-left: 13px;
+}
+
+.nav a {
+    font: 14px 'Lato', sans-serif;
+    color: #444;
+    text-transform: uppercase;
+    padding: 10px 13px;
+}
+
+.nav ul li {
+    display: inline-block; /* ставит список в ряд */
+}
+
+.nav a:hover {
+    color: #fff;
+    background: #1bbc9b;
+    height: 37;
+    transition: 0.2s;
+}
+
+/* HOME PAGE */
+
+.home {
+    background: url(..//img/bg-home.png) center/cover no-repeat;
+    height: 100vh;
+}
+
+.home-page {
+    width: 575px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-page h1 {
+    font: 300 55px/55px 'Lato', sans-serif;
+    color: #fff;
+    padding-top: 70px;
+    margin: 0;
+}
+
+.home-page h1 span {
+    font-weight: bold;
+}
+
+.home-page p {
+    font: 300 18px/24px 'Lato', sans-serif;
+    padding-top: 35px;
+    margin: 0;
+    color: #d6d5d4;
+}
+
+.home-page a {
+    text-decoration: none;
+}
+
+.home-page button {
+    display: block;
+    margin: 50px auto 0 auto;
+    padding: 8px 10px;
+    font: bold 13px 'Lato', sans-serif;
+    color: #fff;
+    background: #1bbc9b;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.home-page img {
+    width: 45px;
+    display: block;
+    margin: 40px auto 0 auto;
+    cursor: pointer;
+}
+
+/* PORTFOLIO PAGE */
+
+/* 16a086 цвет hover opacity 0.75 */
+
+.portfolio-page h1 {
+    font: 28px 'Lato', sans-serif;
+    color: #444;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.portfolio-page p {
+    font: 16px 'Lato', sans-serif;
+    color: #444;
+    margin: 0 auto;
+    padding-top: 17px;
+    text-align: center;
+}
+
+.portfolio-nav {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.portfolio-nav a {
+    font: bold 13px 'Lato', sans-serif;
+    color: #444;
+    text-transform: uppercase;
+    padding: 10px 13px;
+    color: #fff;
+    background: #1bbc9b;
+    text-decoration: none;
+}
+
+.portfolio-nav li {
+    display: inline-block; /* ставит список в ряд */
+    padding-right: 15px;
+}
+
+.portfolio-nav a:hover {
+    height: 37;
+    transition: 0.2s;
+    background: #16a086;
+}
+
+.img-block {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.img-block img {
+    padding: 17px 17px;
+}
+
+/* ABOUT US PAGE */
+
+.about-us {
+    background: #16a086;
+    padding-bottom: 75px;
+}
+
+.about-us h1 {
+    font: 28px 'Lato', sans-serif;
+    margin: 0 auto;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.about-us p {
+    font: 14px 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 15px 0 30px 0;
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.team {
+    width: 220px;
+    color: #444;
+    background: #fff;
+    position: relative;
+}
+
+.team h2 {
+    font: 18px 'Lato', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.team h3 {
+    font: italic 14px 'Lato', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.team p {
+    font: 14px 'Lato', sans-serif;
+    text-align: left;
+    padding: 20px;
+}
+
+.icons {
+    position: absolute;
+    background: #16a086;
+    opacity: 0.8;
+    top: 95px;
+    left: 20px;
+}
+
+.icons a {
+}
+
+.icons a img {
+    width: 40px;
+    padding: 5px;
+}
+
+.twitter-logo { /* Потом удалить */
+    width: 45px;
+    transform: rotateZ('90');
+}
+
+/* ABOUT US PAGE */
+
+.contacts {
+    background: #ecf0f1;
+}
+
+.contacts h1 {
+    font: 28px 'Lato', sans-serif;
+    color: #444;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contacts p {
+    font: 14px 'Lato', sans-serif;
+    color: #444;
+    margin: 0 auto;
+    padding-top: 17px;
+    text-align: center;
+}
+
+.contacts-inner {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.contacts input,
+.contacts textarea {
+    border: 2px solid #bec3c7;
+    font: italic 14px/45px 'Lato', sans-serif;
+    padding-left: 15px;
+}
+
+.contacts input {
+    width: 220px;
+}
+
+.contacts textarea {
+    display: block;
+    width: 460px;
+    height: 153px;
+    margin: 22px 0 23px 0;
+    resize: none;
+}
+
+.contacts button {
+    font: bold 13px 'Lato', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1bbc9b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 0 0 60px 340px;
+}
+
+.contacts button:hover {
+    transition: 0.2s;
+    background: #16a086;
+}
+
+.info h2 {
+    font: 14px 'Lato', sans-serif;
+    text-align: left;
+    color: #444;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.info p {
+    font: 14px/24px 'Lato', sans-serif;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.location {
+    position: relative;
+}
+
+.location::before {
+    content: url(..//img/location.svg);
+    position: absolute;
+    width: 13px;
+    left: 15px;
+    top: 18px;
+}
+
+.phone {
+    position: relative;
+}
+
+.phone::before {
+    content: url(..//img/phone.svg);
+    position: absolute;
+    width: 13px;
+    left: 15px;
+    top: 18px;
+}
+
+.fax {
+    position: relative;
+}
+
+.fax::before {
+    content: url(..//img/fax.svg);
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 15px;
+    top: 18px;
+}
+
+.email {
+    position: relative;
+}
+
+.email::before {
+    content: url(..//img/email.svg);
+    position: absolute;
+    width: 13px;
+    left: 15px;
+    top: 18px;
+}
+
+footer {
+    background: #2d3e50;
+    color: #bec3c7;
+    height: 87px;
+}
+
+footer p {
+    width: 940px;
+    font: 14px/87px 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+/* back-to-top button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 44px;
+    height: 44px;
+    background: #1bbc9b;
+    display: none; /* чтобы кнопка не отображалась, когда юзер на верху страницы */
+
+}
+
+.back-to-top img {
+    width: 20px;
+    margin: 12px 12px;
+}
+
+.back-to-top:hover {
+    transition: 0.2s;
+    background: #16a086;
+}
+
